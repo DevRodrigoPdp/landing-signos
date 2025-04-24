@@ -1,44 +1,47 @@
-import React from "react";
-import ojos from "../images/icono-ojos.png";
-import manos from "../images/icono-manos.png";
-import dialogo from "../images/icono-dialogo.png";
+import { motion } from "framer-motion";
 
 export const QueEs = () => {
+  const pasos = [
+    {
+      titulo: "Observa",
+      descripcion: "Detecta señales del bebé y comprende sus necesidades básicas.",
+    },
+    {
+      titulo: "Signa",
+      descripcion: "Acompaña tus palabras con gestos y repítelos con frecuencia.",
+    },
+    {
+      titulo: "Conecta",
+      descripcion: "Tu bebé empieza a responder con gestos y mejora la comunicación.",
+    },
+  ];
+
   return (
-    <section id="about" className="bg-[#FFF9F4] py-24">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-[#FF9E9E] mb-4">¿Cómo funciona el Baby Sign?</h2>
-        <p className="text-md text-[#666] max-w-xl mx-auto mb-12">
-          Aprender a signar con tu bebé es más fácil de lo que piensas. Aquí te mostramos cómo lo hacemos en tres pasos sencillos:
-        </p>
+    <section id="about" className="bg-[#FFF9F4] py-24 mt-35">
+      <div className="max-w-4xl mx-auto px-6">
+        <motion.h2
+          className="text-4xl font-bold text-[#FF9E9E] text-center mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          ¿Cómo funciona el Baby Sign?
+        </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Paso 1 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition text-center">
-            <img src={ojos} alt="Observa" className="w-16 h-16 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-[#FF9E9E] mb-2">1. Observa</h3>
-            <p className="text-sm text-[#555]">
-              Aprendemos a detectar momentos clave: cuando tiene hambre, sueño, quiere jugar o necesita cariño.
-            </p>
-          </div>
-
-          {/* Paso 2 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition text-center">
-            <img src={manos} alt="Signa" className="w-16 h-16 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-[#00BFA6] mb-2">2. Signa</h3>
-            <p className="text-sm text-[#555]">
-              Usamos gestos simples acompañando nuestras palabras. Repetimos con amor, sin presión.
-            </p>
-          </div>
-
-          {/* Paso 3 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition text-center">
-            <img src={dialogo} alt="Conecta" className="w-16 h-16 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-[#FFC857] mb-2">3. Conecta</h3>
-            <p className="text-sm text-[#555]">
-              Tu peque empieza a signar. Se siente comprendido, reduce su frustración... y nace la magia de comunicarse.
-            </p>
-          </div>
+        <div className="border-l-4 border-[#FF9E9E] pl-6 space-y-10">
+          {pasos.map((paso, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-lg font-semibold text-[#37595e]">{paso.titulo}</h3>
+              <p className="text-sm text-[#555]">{paso.descripcion}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

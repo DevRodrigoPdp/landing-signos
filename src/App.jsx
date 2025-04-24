@@ -1,4 +1,5 @@
 import './App.css'
+import { Formaciones } from './components/Formaciones'
 import { Header } from './components/Header'
 import { Hero } from "./components/Hero"
 import { QueEs } from './components/QueEs'
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <Hero/>
       <QueEs/>
+      <Formaciones/>
     </>
   )
 }
