@@ -29,7 +29,7 @@ export const SobreElProfesional = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-[#474747] mb-4">Sobre Patricia Puerta del Pozo</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#474747] mb-4">Patricia Puerta del Pozo</h1>
           <p className="text-lg text-[#656c7c] mb-6">
             Patricia Puerta del Pozo es una logopeda altamente capacitada y asesora en signos para bebés, con una pasión
             por ayudar a los más pequeños a desarrollar sus habilidades comunicativas de manera temprana.
