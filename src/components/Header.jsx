@@ -42,7 +42,7 @@ export const Header = () => {
         <nav className="hidden md:flex space-x-6 items-center border-none rounded-full p-3 font-bold">
           <a href="#home" className="hover:text-[#b15050] transition">Inicio</a>
           <a href="#about" className="hover:text-[#b15050] transition">¿Qué es el Baby Sign?</a>
-          <a href="#instructor" className="hover:text-[#b15050] transition">Sobre mí</a>
+          <a href="#about" className="hover:text-[#b15050] transition">Sobre mí</a>
           <a href="#contact" className="hover:text-[#b15050] transition">Contacto</a>
           <a href="#formaciones" className="ml-4 bg-[#ec7f7f] text-white px-4 py-2 rounded-full hover:bg-[#b15050] transition">
             Reserva tu curso
@@ -59,7 +59,7 @@ export const Header = () => {
         <a href="#home" className="hover:text-[#37595e] transition">Inicio</a>
         <a href="#about" className="hover:text-[#37595e] transition">¿Qué es el Baby Sign?</a>
         <a href="#formaciones" className="hover:text-[#37595e] transition">Formaciones</a>
-        <a href="#instructor" className="hover:text-[#37595e] transition">Sobre mí</a>
+        <a href="#about" className="hover:text-[#37595e] transition">Sobre mí</a>
         <a href="#contact" className="hover:text-[#37595e] transition">Contacto</a>
         <a href="#formaciones" className="ml-4 bg-[#37595e] text-white px-4 py-2 rounded-full hover:bg-[#65949b] transition">
           Reserva tu curso

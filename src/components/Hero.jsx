@@ -50,7 +50,13 @@ export const Hero = () => {
             viewport={{ once: true }}
             className="flex justify-center md:justify-start mt-6"
           >
-            <button className="learn-more">
+            <button
+              onClick={() => {
+                const section = document.getElementById("formaciones");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="learn-more"
+            >
               <span className="circle" aria-hidden="true">
                 <span className="icon arrow"></span>
               </span>

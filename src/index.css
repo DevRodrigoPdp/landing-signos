@@ -3,6 +3,9 @@
   font-family: 'Poppins';
   background-color: #EDDADD;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* From Uiverse.io by alexmaracinaru */ 
 /* From Uiverse.io by cssbuttons-io */ 
 button {
