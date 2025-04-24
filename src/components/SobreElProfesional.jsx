@@ -51,7 +51,7 @@ export const SobreElProfesional = () => {
 
           <div className="flex justify-center md:justify-start gap-6">
             <a
-              href="https://www.instagram.com/tu_instagram"
+              href="https://www.instagram.com/soypatriciapuerta/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#ea4c89] hover:text-[#ce3b73] transition-colors"
