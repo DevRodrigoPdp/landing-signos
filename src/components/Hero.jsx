@@ -4,9 +4,9 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center p-40 "
+      className="min-h-screen flex items-center px-6 py-12 md:p-40" // Ajustes para mejor espaciado en móvil
     >
-      <div className=" mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
         {/* Texto */}
         <div className="flex-1 text-center md:text-left">
           <motion.h1
@@ -14,7 +14,7 @@ export const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-5xl font-extrabold text-[#ec7f7f]"
+            className="text-4xl md:text-5xl font-extrabold text-[#ec7f7f]"
           >
             Sus manos hablan antes que su voz
           </motion.h1>
@@ -36,7 +36,7 @@ export const Hero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-md text-[#666] m mx-auto mt-4"
+            className="text-md text-[#666] mt-4"
           >
             Descubre nuestras formaciones online y presenciales, sesiones de
             consultoría y materiales diseñados por expertas para integrar los
@@ -60,7 +60,7 @@ export const Hero = () => {
         </div>
 
         {/* Imagen */}
-        <div className="flex-1">
+        <div className="flex-1 mt-8 md:mt-0">
           <motion.img
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
