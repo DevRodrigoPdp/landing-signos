@@ -61,7 +61,7 @@ export const Header = () => {
         <a href="#formaciones" className="hover:text-[#37595e] transition">Formaciones</a>
         <a href="#instructor" className="hover:text-[#37595e] transition">Sobre mí</a>
         <a href="#contact" className="hover:text-[#37595e] transition">Contacto</a>
-        <a href="#book" className="ml-4 bg-[#37595e] text-white px-4 py-2 rounded-full hover:bg-[#65949b] transition">
+        <a href="#formaciones" className="ml-4 bg-[#37595e] text-white px-4 py-2 rounded-full hover:bg-[#65949b] transition">
           Reserva tu curso
         </a>
       </div>

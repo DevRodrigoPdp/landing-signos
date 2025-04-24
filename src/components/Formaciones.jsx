@@ -3,7 +3,7 @@ import presencial from '../images/babysign-presencial.png'
 
 export const Formaciones = () => {
   return (
-    <section className="w-full py-20 bg-[#F9F9F9]">
+    <section id="formaciones" className="w-full py-20 bg-[#F9F9F9]">
       <div className="max-w-[1100px] mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#474747] mb-4">Cursos de Baby Sign</h2>
