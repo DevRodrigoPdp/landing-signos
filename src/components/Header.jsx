@@ -1,5 +1,3 @@
-
-
 export const Header = () => {
     return (
       <header className=" text-[#669EA5] sticky z-50 mt-3 ">
