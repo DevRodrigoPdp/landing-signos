@@ -1,4 +1,5 @@
 import online from '../images/babysign-online.png'
+import presencial from '../images/babysign-presencial.png'
 
 export const Formaciones = () => {
   return (
@@ -12,7 +13,7 @@ export const Formaciones = () => {
         {/* Curso Online */}
         <div className="flex flex-col md:flex-row gap-8 mb-12 w-full justify-center items-center md:items-stretch">
           {/* Imagen del curso Online */}
-          <div className="w-full md:w-1/3 flex justify-center">
+          <div className="w-full md:w-1/3 aspect-[4/3] overflow-hidden rounded-lg flex justify-center items-center bg-white">
             <img
               src={online} // Reemplazar con la imagen correspondiente
               alt="Curso Online Baby Sign"
@@ -41,9 +42,9 @@ export const Formaciones = () => {
         {/* Curso Presencial */}
         <div className="flex flex-col md:flex-row gap-8 mb-12 w-full justify-center items-center md:items-stretch">
           {/* Imagen del curso Presencial */}
-          <div className="w-full md:w-1/3 flex justify-center">
+          <div className="w-full md:w-1/3 aspect-[4/3] overflow-hidden rounded-lg flex justify-center items-center bg-white">
             <img
-              src="https://example.com/imagen-curso-presencial.jpg" // Reemplazar con la imagen correspondiente
+              src={presencial} // Reemplazar con la imagen correspondiente
               alt="Curso Presencial Baby Sign"
               className="rounded-lg w-full h-auto"
             />
