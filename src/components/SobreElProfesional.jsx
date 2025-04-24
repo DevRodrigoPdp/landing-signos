@@ -5,11 +5,11 @@ export const SobreElProfesional = () => {
     <section className="w-full py-20 bg-[#F3F4F6]">
       <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center px-4">
         {/* Imagen a la izquierda */}
-        <div className="w-full md:w-1/3 mb-8 md:mb-0 flex justify-center">
+        <div className="w-full md:w-1/3 mb-8 md:mb-0 flex justify-center md:mr-25">
           <img
             src={fotoPerfil}
             alt="Patricia Puerta del Pozo"
-            className="rounded-full w-32 h-32 md:w-72 md:h-72" 
+            className="w-full md:w-[325px] md:h-[350px] object-cover rounded-lg mb-4 md:mb-0"
           />
         </div>
 
