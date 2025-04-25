@@ -8,10 +8,10 @@ export const Header = () => {
   };
 
   return (
-    <header className="text-[#ec7f7f] sticky z-50 mt-3">
+    <header className="text-[#f0626c] sticky z-50 mt-3">
       <div className="px-4 py-4 flex items-center justify-between md:justify-around">
         {/* Logo / Brand */}
-        <div className="text-5xl font-bold text-[#ec7f7f]">
+        <div className="text-4xl font-bold text-[#f0626c]">
           Patricia Puerta
         </div>
 
@@ -40,11 +40,11 @@ export const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 items-center border-none rounded-full p-3 font-bold">
-          <a href="#home" className="hover:text-[#b15050] transition">Inicio</a>
-          <a href="#about" className="hover:text-[#b15050] transition">¿Qué es el Baby Sign?</a>
-          <a href="#about" className="hover:text-[#b15050] transition">Sobre mí</a>
-          <a href="#contact" className="hover:text-[#b15050] transition">Contacto</a>
-          <a href="#formaciones" className="ml-4 bg-[#ec7f7f] text-white px-4 py-2 rounded-full hover:bg-[#b15050] transition">
+          <a href="#home" className="hover:text-[#ffb6c1] transition">Inicio</a>
+          <a href="#about" className="hover:text-[#ffb6c1] transition">¿Qué es el Baby Sign?</a>
+          <a href="#about" className="hover:text-[#ffb6c1] transition">Sobre mí</a>
+          <a href="#contact" className="hover:text-[#ffb6c1] transition">Contacto</a>
+          <a href="#formaciones" className="bg-[#f0626c] text-white rounded-full px-4 py-2 shadow-md hover:bg-[#ffb6c1] transition">
             Reserva tu curso
           </a>
         </nav>
