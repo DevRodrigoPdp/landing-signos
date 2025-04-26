@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
 }
 /* Estilo para el formulario de contacto */
 .bg-cream {
