@@ -40,10 +40,9 @@ export const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 items-center border-none rounded-full p-3 font-bold">
-          <a href="#home" className="hover:text-[#ffb6c1] transition">Inicio</a>
           <a href="#about" className="hover:text-[#ffb6c1] transition">Sobre mí</a>
-          <a href="#about" className="hover:text-[#ffb6c1] transition">¿Qué es el Baby Sign?</a>
-          <a href="#contact" className="hover:text-[#ffb6c1] transition">Contacto</a>
+          <a href="#queEs" className="hover:text-[#ffb6c1] transition">¿Qué es el Baby Sign?</a>
+          <a href="#contacto" className="hover:text-[#ffb6c1] transition">Contacto</a>
           <a href="#formaciones" className="bg-[#f0626c] text-white rounded-full px-4 py-2 shadow-md hover:bg-[#ffb6c1] transition">
             Reserva tu curso
           </a>

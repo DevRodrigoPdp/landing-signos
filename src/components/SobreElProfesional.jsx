@@ -64,7 +64,7 @@ export const SobreElProfesional = () => {
               Instagram
             </a>
             <a
-              href="mailto:patricia@example.com"
+              href="mailto:patriciapuertadelpozo@gmail.com"
               className="text-[#ea4c89] hover:text-[#ce3b73] transition-colors"
             >
               Gmail

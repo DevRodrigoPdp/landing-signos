@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const QueEs = () => {
   return (
-    <section className=" py-20 px-6 text-center" id="como-funciona">
+    <section id="queEs"className=" py-20 px-6 text-center" >
       <h2 className="text-3xl md:text-4xl font-extrabold text-[#f58a8a] mb-12">
         ¿Cómo funciona el Baby Sign?
       </h2>

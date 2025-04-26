@@ -1,11 +1,46 @@
 @import "tailwindcss";
 :root {
   font-family: 'Poppins';
-  
+  --cream-bg: #f5f5f5; /* Fondo crema */
+  --cream-light: #e2d9b5; /* Bordes suaves beige */
+  --cream-button: #68b5f5; /* Color amarillo suave para el botón */
+  --text-dark: #5a5a5a; /* Gris oscuro para texto */
 }
+
 html {
   scroll-behavior: smooth;
 }
+/* Estilo para el formulario de contacto */
+.bg-cream {
+  background-color: var(--cream-bg);
+}
+
+.border-cream-light {
+  border-color: var(--cream-light);
+}
+
+/* Estilo para el botón de contacto con clase personalizada */
+.btn-contacto {
+  background-color: var(--cream-button);
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-contacto:hover {
+  background-color: #4e41ff; /* Amarillo oscuro en hover */
+  transform: translateY(-2px);
+}
+
+.btn-contacto:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
 /* From Uiverse.io by alexmaracinaru */ 
 /* From Uiverse.io by cssbuttons-io */ 
 button {
