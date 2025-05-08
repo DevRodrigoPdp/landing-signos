@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Mail, User, MessageSquare } from "lucide-react";
-import { motion } from "framer-motion"; // Importar framer-motion
+import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+
+emailjs.init("D2IXWgmNcUJV-wnOb");
 
 export const Contacto = () => {
   const [formState, setFormState] = useState("idle");
@@ -19,19 +22,25 @@ export const Contacto = () => {
     e.preventDefault();
     setFormState("submitting");
 
-    // Simulación de envío de formulario
-    setTimeout(() => {
-      setFormState("success");
-      // Resetear el formulario después de 3 segundos
-      setTimeout(() => {
+    emailjs
+      .send(
+        "service_kcws7ea",
+        "template_fz5wmit",
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "D2IXWgmNcUJV-wnOb"
+      )
+      .then(() => {
+        setFormState("success");
+      })
+      .catch((error) => {
+        console.error("Email error:", error);
         setFormState("idle");
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-      }, 3000);
-    }, 1500);
+        alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+      });
   };
 
   return (
@@ -50,12 +59,16 @@ export const Contacto = () => {
         exit={{ y: -50 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-3xl font-bold text-center text-[#ea4c89]">
-          ¡Estamos aquí para ayudarte!
-        </h2>
-        <p className="text-center text-gray-500">
-          Envía tus preguntas y consultas sobre el desarrollo comunicativo de tu bebé.
-        </p>
+        {formState !== "success" && (
+          <>
+            <h2 className="text-3xl font-bold text-center text-[#ea4c89]">
+              ¡Estamos aquí para ayudarte!
+            </h2>
+            <p className="text-center text-gray-500">
+              Envía tus preguntas y consultas sobre el desarrollo comunicativo de tu bebé.
+            </p>
+          </>
+        )}
 
         {formState === "success" ? (
           <motion.div
@@ -139,7 +152,6 @@ export const Contacto = () => {
               />
             </div>
 
-            {/* BOTÓN visible y funcional */}
             <motion.button
               type="submit"
               disabled={formState === "submitting"}
