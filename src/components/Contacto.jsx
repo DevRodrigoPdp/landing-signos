@@ -90,9 +90,9 @@ export const Contacto = () => {
             <div className="space-y-2">
               <label
                 htmlFor="name"
-                className="text-blue-400 font-medium flex items-center gap-2"
+                className="text-[#ea4c89] font-medium flex items-center gap-2"
               >
-                <User className="h-5 w-5 text-blue-400" /> Nombre completo
+                <User className="h-5 w-5 text-[#ea4c89]" /> Nombre completo
               </label>
               <motion.input
                 type="text"
@@ -102,7 +102,7 @@ export const Contacto = () => {
                 onChange={handleChange}
                 placeholder="Nombre del padre/madre o tutor"
                 required
-                className="w-full p-3 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 border border-[#ea4c89] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -112,9 +112,9 @@ export const Contacto = () => {
             <div className="space-y-2">
               <label
                 htmlFor="email"
-                className="text-blue-400 font-medium flex items-center gap-2"
+                className="text-[#ea4c89] font-medium flex items-center gap-2"
               >
-                <Mail className="h-5 w-5 text-blue-400" /> Correo electrónico
+                <Mail className="h-5 w-5 text-[#ea4c89]" /> Correo electrónico
               </label>
               <motion.input
                 type="email"
@@ -124,7 +124,7 @@ export const Contacto = () => {
                 onChange={handleChange}
                 placeholder="tu@email.com"
                 required
-                className="w-full p-3 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 border border-[#ea4c89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ea4c89]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -134,9 +134,9 @@ export const Contacto = () => {
             <div className="space-y-2">
               <label
                 htmlFor="message"
-                className="text-blue-400 font-medium flex items-center gap-2"
+                className="text-[#ea4c89] font-medium flex items-center gap-2"
               >
-                <MessageSquare className="h-5 w-5 text-blue-400" /> Tu mensaje
+                <MessageSquare className="h-5 w-5 text-[#ea4c89]" /> Tu mensaje
               </label>
               <motion.textarea
                 id="message"
@@ -145,7 +145,7 @@ export const Contacto = () => {
                 onChange={handleChange}
                 placeholder="Cuéntanos sobre tu bebé y cómo podemos ayudarte..."
                 required
-                className="w-full p-3 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[120px]"
+                className="w-full p-3 border border-[#ea4c89] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ea4c89] min-h-[120px]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}

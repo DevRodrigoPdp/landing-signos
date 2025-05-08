@@ -13,7 +13,7 @@ export const Header = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Cambia cuando el 50% del elemento es visible
+      threshold: 0.5, 
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -52,7 +52,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`text-[#f0626c] sticky top-0 z-50 ${bgColor} backdrop-blur-md shadow-md transition-colors duration-500`}
+      className={`text-[#f0626c] sticky top-0 z-50 ${bgColor} backdrop-blur-md  transition-colors duration-500`}
     >
       <div className="px-4 py-4 flex items-center justify-between md:justify-around">
         <div className="text-4xl font-bold text-[#f0626c]">Patricia Puerta</div>
@@ -80,18 +80,18 @@ export const Header = () => {
         </div>
 
         <nav className="hidden md:flex space-x-6 items-center border-none rounded-full p-3 font-bold">
-          <a href="#about" className="hover:text-[#ffb6c1] transition">
+          <a href="#about" className=" hover:underline transition">
             Sobre mí
           </a>
-          <a href="#queEs" className="hover:text-[#ffb6c1] transition">
+          <a href="#queEs" className="] hover:underline transition">
             ¿Qué es el Baby Sign?
           </a>
-          <a href="#contacto" className="hover:text-[#ffb6c1] transition">
+          <a href="#contacto" className=" hover:underline transition">
             Contacto
           </a>
           <a
             href="#formaciones"
-            className="bg-[#f0626c] text-white rounded-full px-4 py-2 shadow-md hover:bg-[#ffb6c1] transition"
+            className="bg-[#f0626c] text-white rounded-full px-4 py-2 shadow-md "
           >
             Reserva tu curso
           </a>
@@ -103,19 +103,19 @@ export const Header = () => {
           isMenuOpen ? "block" : "hidden"
         }`}
       >
-        <a href="#home" className="hover:text-[#37595e] transition">
+        <a href="#home" className="hover:text-[#37595e] hover:underline transition">
           Inicio
         </a>
-        <a href="#queEs" className="hover:text-[#37595e] transition">
+        <a href="#queEs" className="hover:text-[#37595e] hover:underline transition">
           ¿Qué es el Baby Sign?
         </a>
-        <a href="#formaciones" className="hover:text-[#37595e] transition">
+        <a href="#formaciones" className="hover:text-[#37595e] hover:underline transition">
           Formaciones
         </a>
-        <a href="#about" className="hover:text-[#37595e] transition">
+        <a href="#about" className="hover:text-[#37595e] hover:underline transition">
           Sobre mí
         </a>
-        <a href="#contact" className="hover:text-[#37595e] transition">
+        <a href="#contact" className="hover:text-[#37595e] hover:underline transition">
           Contacto
         </a>
         <a

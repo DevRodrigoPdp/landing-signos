@@ -19,12 +19,6 @@ const Footer = () => {
             <a href="#" className="text-[#3b82f6] hover:underline">
               Política de privacidad
             </a>
-            <a href="#" className="text-[#3b82f6] hover:underline">
-              Términos de servicio
-            </a>
-            <a href="#" className="text-[#3b82f6] hover:underline">
-              Contacto
-            </a>
           </div>
         </div>
       </footer>
